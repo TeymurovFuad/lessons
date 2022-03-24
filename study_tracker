@@ -2,13 +2,16 @@
 c# lessons
 
   Week 1 
-    Lesson 1
-      1) What is .Net compiler, CIL, CLR and JIT
-      2) What is programming paradigms
-      3) What is algoritm in programming
-    Lesson 2  
-      Installing and getting familiar with git. General overview
+    	Lesson 1
+      		1) What is .Net compiler, CIL, CLR and JIT
+      		2) What is programming paradigms
+      		3) What is algoritm in programming
+    	Lesson 2  
+      		Installing and getting familiar with git. General overview
     
   Week 2
-    Lesson 3
-      Detailed introduction to the GIT. Getting familiar with commands push, pull, merge, log, status. diff.
+	Lesson 3
+      		Detailed introduction to the GIT. Getting familiar with commands push, pull, merge, log, status. diff.
+		Explained working woth Visual Studio, creating project
+		Basic commands Console[Read, ReadLine. Write. WriteLine]
+		
