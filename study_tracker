@@ -2,20 +2,18 @@
 c# lessons
 
 Week 1 
-    	Lesson 1
+    	Lesson 1 (13 March)
       		1) What is .Net compiler, CIL, CLR and JIT
       		2) What is programming paradigms
       		3) What is algoritm in programming
-    	Lesson 2  
+    	Lesson 2 (17 March)
       		Installing and getting familiar with git. General overview
-    
-Week 2
-	Lesson 3
-      		Detailed introduction to the GIT. Getting familiar with commands push, pull, merge, log, status. diff.
+		Detailed introduction to the GIT. Getting familiar with commands push, pull, merge, log, status. diff.
 		Explained working woth Visual Studio, creating project
 		Basic commands Console[Read, ReadLine. Write. WriteLine]
-
-	Lesson 4
+    
+Week 2
+	Lesson 3 (23 March)
 		Memory allocation
 		Types of RAM
 		What is Static/Heap memory		
