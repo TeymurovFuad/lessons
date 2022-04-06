@@ -11,91 +11,83 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
 
-            //int bignum = 5466465;
-            //byte iiiToByte2 = (byte)bignum;
-            //byte iiiToByte = Convert.ToByte(bignum);
-
-
             //Task 1
+            {
+                Console.WriteLine("Please insert 2 numbers");
 
-            int i = 5;
-            byte b = 1;
-            float f = 5.5F;
-            long l = 654644564656;
-            short s = 2313;
-            string st = "465";
-            string st1 = "h";
-            char c = '5';
-
-            //Implicit
-            long intToLong = i;
-            short byteToShort = b;
-            double floatToDouble = f;
-            float longToFloat = l;
-            decimal shortToDecimal = s;
-
-            //Explicit
-
-            short longToShort = (short)l;
-            decimal floatToDecimal = (decimal)f;
-            byte intToByte = (byte)i;
-            int longToInt = (int)l;
-            byte floatToByte = (byte)f;
-
-            //Helper
-
-            char stringToChar = Convert.ToChar(st1);
-            int stringToInt = Convert.ToInt32(st);
-            string intToString = Convert.ToString(b);
-            byte charToByte = Convert.ToByte(c);
-
+                Console.WriteLine("Number a");
+                int a = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Number b");
+                int b = Convert.ToInt32(Console.ReadLine());
+                int tmp = a;
+                a = b;
+                b = tmp;
+            }
 
             //Task 2
-            string name, surname, country, city;
-            float height, weight;
-            decimal salary;
-            int age;
-            DateTime dateOfBirth;
-            bool sex;
-
-            Console.WriteLine("Please enter your");
-            Console.WriteLine("Name");
-            name = Console.ReadLine();
-            Console.WriteLine("Surname");
-            surname = Console.ReadLine();
-            Console.WriteLine("Sex");
-            sex = Convert.ToBoolean(Console.ReadLine());
-            Console.WriteLine("Date of birth ex. year/month/day");
-            dateOfBirth = Convert.ToDateTime(Console.ReadLine());
-            Console.WriteLine("Country");
-            country = Console.ReadLine();
-            Console.WriteLine("City");
-            city = Console.ReadLine();
-            Console.WriteLine("Height");
-            height = float.Parse(Console.ReadLine());
-            Console.WriteLine("Weight");
-            height = float.Parse(Console.ReadLine());
-            Console.WriteLine("Salary ");
-            salary = Convert.ToDecimal(Console.ReadLine());
+            {
+                Console.Clear();
+                Console.WriteLine("Number a");
+                int a = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Number b");
+                int b = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Number c");
+                int c = Convert.ToInt32(Console.ReadLine());
+                int sum = a + b + c;
+                int sub = a - b - c;
+                int mult = a * b * c;
+                decimal div = (decimal)a / b / c;
+                Console.WriteLine("{0}+{1}+{2}={3}", a,b,c,sum);
+                Console.WriteLine("{0}-{1}-{2}={3}", a,b,c,sub);
+                Console.WriteLine("{0}x{1}x{2}={3}", a,b,c,mult);
+                Console.WriteLine("{0}:{1}:{2}={3}", a,b,c,div);
+                Console.ReadLine();
+            }
 
             //Task 3
-            Console.WriteLine("Enter your age");
-            age = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter your salary");
-            salary = decimal.Parse(Console.ReadLine());
-            Console.WriteLine("Enter your height");
-            height = float.Parse(Console.ReadLine());
-            Console.WriteLine("Enter your weight");
-            weight = float.Parse(Console.ReadLine());
+            {
+                Console.Clear();
+                Console.WriteLine("Insert a");
+                int a = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Insert b");
+                int b = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Insert c");
+                int c = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Insert d");
+                int d = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Insert e");
+                int e = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Insert f");
+                int f = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Insert g");
+                int g = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Insert h");
+                int h = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Insert i");
+                int i = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Insert k");
+                int k = Convert.ToInt32(Console.ReadLine());
 
-            int salaryToInt = (int)salary;
-            int heightToInt = (int)height;
-            int weightToInt = (int)weight;
+                int sum = a + b + c + d + e + f + g + h + i + k;
+                int sub = a - b - c - d - e - f - g - h - i - k;
+                long mult = a * b * c * d * e * f * g * h * i * k;
+                double div = (double)a / b / c / d / e / f / g / h / i / k ;
 
-            byte heightToByte = (byte)heightToInt; //xetasiz
-            byte weightToByte = (byte)weightToInt; //xetasiz
-            byte salaryToByte = Convert.ToByte(salaryToInt); //xeta cixacaq salary 255-den boyuk olarsa
-            byte agteToByte = Convert.ToByte(age); //xeta cixacaq yash 255-den boyuk olarsa
+                Console.WriteLine("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}+{8}+{9}={10}",a,b,c,d,e,f,g,h,i,k,sum);
+                Console.WriteLine("sum-- = {0}", --sum);
+                Console.WriteLine("sum++ = {0}", ++sum);
+                Console.WriteLine("{0}-{1}-{2}-{3}-{4}-{5}-{6}-{7}-{8}-{9}={10}", a, b, c, d, e, f, g, h, i, k, sub);
+                Console.WriteLine("sub++ = {0}", ++sub);
+                Console.WriteLine("sub++ = {0}", --sub);
+                Console.WriteLine("{0}x{1}x{2}x{3}x{4}x{5}x{6}x{7}x{8}x{9}={10}", a, b, c, d, e, f, g, h, i, k, mult);
+                Console.WriteLine("({0}x{1}x{2}x{3}x{4}x{5}x{6}x{7}x{8}x{9})x20={10}", a, b, c, d, e, f, g, h, i, k, mult *20);
+                Console.WriteLine("({0}x{1}x{2}x{3}x{4}x{5}x{6}x{7}x{8}x{9}):20={10}", a, b, c, d, e, f, g, h, i, k, mult /20);
+                Console.WriteLine("{0}:{1}:{2}:{3}:{4}:{5}:{6}:{7}:{8}:{9}={10}", a, b, c, d, e, f, g, h, i, k, div);
+                Console.WriteLine("({0}:{1}:{2}:{3}:{4}:{5}:{6}:{7}:{8}:{9})x20={10}", a, b, c, d, e, f, g, h, i, k, div *20);
+                Console.WriteLine("({0}:{1}:{2}:{3}:{4}:{5}:{6}:{7}:{8}:{9}):20={10}", a, b, c, d, e, f, g, h, i, k, div /20);
+                Console.ReadLine();
+            }
+
         }
     }
 }
