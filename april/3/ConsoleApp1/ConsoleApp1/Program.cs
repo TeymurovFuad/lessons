@@ -12,37 +12,37 @@ namespace ConsoleApp1
         {
 
             //Task 1
-            {
-                Console.WriteLine("Please insert 2 numbers");
+            //{
+            //    Console.WriteLine("Please insert 2 numbers");
 
-                Console.WriteLine("Number a");
-                int a = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Number b");
-                int b = Convert.ToInt32(Console.ReadLine());
-                int tmp = a;
-                a = b;
-                b = tmp;
-            }
+            //    Console.WriteLine("Number a");
+            //    int a = Convert.ToInt32(Console.ReadLine());
+            //    Console.WriteLine("Number b");
+            //    int b = Convert.ToInt32(Console.ReadLine());
+            //    int tmp = a;
+            //    a = b;
+            //    b = tmp;
+            //}
 
             //Task 2
-            {
-                Console.Clear();
-                Console.WriteLine("Number a");
-                int a = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Number b");
-                int b = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Number c");
-                int c = Convert.ToInt32(Console.ReadLine());
-                int sum = a + b + c;
-                int sub = a - b - c;
-                int mult = a * b * c;
-                decimal div = (decimal)a / b / c;
-                Console.WriteLine("{0}+{1}+{2}={3}", a,b,c,sum);
-                Console.WriteLine("{0}-{1}-{2}={3}", a,b,c,sub);
-                Console.WriteLine("{0}x{1}x{2}={3}", a,b,c,mult);
-                Console.WriteLine("{0}:{1}:{2}={3}", a,b,c,div);
-                Console.ReadLine();
-            }
+            //{
+            //    Console.Clear();
+            //    Console.WriteLine("Number a");
+            //    int a = Convert.ToInt32(Console.ReadLine());
+            //    Console.WriteLine("Number b");
+            //    int b = Convert.ToInt32(Console.ReadLine());
+            //    Console.WriteLine("Number c");
+            //    int c = Convert.ToInt32(Console.ReadLine());
+            //    int sum = a + b + c;
+            //    int sub = a - b - c;
+            //    int mult = a * b * c;
+            //    decimal div = (decimal)a / b / c;
+            //    Console.WriteLine("{0}+{1}+{2}={3}", a,b,c,sum);
+            //    Console.WriteLine("{0}-{1}-{2}={3}", a,b,c,sub);
+            //    Console.WriteLine("{0}x{1}x{2}={3}", a,b,c,mult);
+            //    Console.WriteLine("{0}:{1}:{2}={3}", a,b,c,div);
+            //    Console.ReadLine();
+            //}
 
             //Task 3
             {
@@ -71,9 +71,11 @@ namespace ConsoleApp1
                 int sum = a + b + c + d + e + f + g + h + i + k;
                 int sub = a - b - c - d - e - f - g - h - i - k;
                 long mult = a * b * c * d * e * f * g * h * i * k;
-                double div = (double)a / b / c / d / e / f / g / h / i / k ;
+                double div = (double)a / b / c / d / e / f / g / h / i / k;
 
                 Console.WriteLine("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}+{8}+{9}={10}",a,b,c,d,e,f,g,h,i,k,sum);
+                Console.WriteLine("{0}", sum--);
+                Console.WriteLine("{0}", sum++);
                 Console.WriteLine("sum-- = {0}", --sum);
                 Console.WriteLine("sum++ = {0}", ++sum);
                 Console.WriteLine("{0}-{1}-{2}-{3}-{4}-{5}-{6}-{7}-{8}-{9}={10}", a, b, c, d, e, f, g, h, i, k, sub);
