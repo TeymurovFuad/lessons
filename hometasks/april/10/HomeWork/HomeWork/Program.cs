@@ -24,6 +24,7 @@ namespace HomeWork
 
 
             //Task 2
+            Console.Clear();
             for (int i = 1; i < 10; i++)
             {
                 for (int j = 0; j < 10; j++)
@@ -34,16 +35,18 @@ namespace HomeWork
             }
 
             //Task 3
+            Console.Clear();
             Console.WriteLine("To start game, please, insert any number greater than 1");
             Random r = new Random();
             int userInput3 = Convert.ToInt32(Console.ReadLine());
             decimal randInt = r.Next(1, userInput3);
             Console.WriteLine("Please find randomly generated number between 1 and {0} (max attempts: 5)", userInput3);
             int attemt = 1;
+            int guess;
             while(true)
             {
-                int guess = Convert.ToInt32(Console.ReadLine());
-                if(attemt == 5)
+                guess = Convert.ToInt32(Console.ReadLine());
+                if (attemt == 5)
                 {
                     Console.WriteLine("No attempts left. You are oficially looser");
                     break;
@@ -63,6 +66,7 @@ namespace HomeWork
             Console.ReadLine();
 
             //Task 4
+            Console.Clear();
             Console.WriteLine("Insert any number");
             int userInput2 = Convert.ToInt32(Console.ReadLine());
             while(userInput2 != 0)
